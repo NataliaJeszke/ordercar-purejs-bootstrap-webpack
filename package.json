@@ -1,0 +1,33 @@
+{
+  "name": "ordercar-purejs-bootstrap-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=none",
+    "start:dev": "webpack-dev-server --mode=development",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "start:prod": "webpack-dev-server --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "google-fonts-webpack-plugin": "^0.4.4",
+    "image-webpack-loader": "^8.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "imagemin": "^8.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

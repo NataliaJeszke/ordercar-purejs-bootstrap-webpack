@@ -1,0 +1,6 @@
+# Ignore nde_modules
+node_modules/
+
+#Ignore build artefacts
+dist/
+*.log
