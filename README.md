@@ -76,6 +76,10 @@ Undraw.co for images
 
 <a href="https://www.freepik.com/free-vector/happy-family-travelling-by-car-with-camping-equipment-top_11235510.htm#query=car&position=45&from_view=search&track=sph">Image by pch.vector</a> on Freepik
 
+api.lorem.space
+
+picsum.photos
+
 ## Author
 
 - GitHub - [NataliaJeszke](https://github.com/NataliaJeszke)
