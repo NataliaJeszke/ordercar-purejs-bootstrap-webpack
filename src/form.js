@@ -133,6 +133,22 @@ function setCurrentDate() {
   const upToDays = new Date(today);
   upToDays.setDate(today.getDate() + 14);
   $dateCalendar.min = upToDays.toISOString().split("T")[0];
+  
+  // Disable days before 14 days on Safari
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafari) {
+    const dateFields = document.querySelectorAll('input[type="date"]');
+    for (let i = 0; i < dateFields.length; i++) {
+      dateFields[i].addEventListener('change', (event) => {
+        const selectedDate = new Date(event.target.value);
+        const minDate = new Date(upToDays.getTime());
+
+        if (selectedDate < minDate) {
+          event.target.value = minDate.toISOString().split("T")[0];
+        }
+      });
+    }
+  }
 }
 setCurrentDate();
 
