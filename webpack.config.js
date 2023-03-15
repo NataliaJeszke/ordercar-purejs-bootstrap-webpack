@@ -1,9 +1,12 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
-  entry: "./src/script.js",
+  entry: {
+    bundle: path.resolve(__dirname, "./src/script.js"),
+  },
   output: {
-    filename: "bundle.js",
+    // filename: "bundle.js",
+    filename: "[name][contenthash].js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "[name][ext]",
   },
@@ -13,6 +16,10 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     port: 9000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -39,20 +46,21 @@ module.exports = {
         type: "asset/resource",
         use: [
           {
-            loader: 'image-webpack-loader',
+            loader: "image-webpack-loader",
             options: {
-              mozjpeg:{
-                quality: 40
-              }
-            }
-          }
-        ]
+              mozjpeg: {
+                quality: 40,
+              },
+            },
+          },
+        ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      filename: "index.html",
     }),
   ],
 };
