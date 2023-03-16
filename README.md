@@ -27,9 +27,9 @@ Install dependencies: npm install
 
 Build the project: npm run build
 
-Start the development server: npm run start
+Start the development server: npm run start:dev
 
-The application should now be available at http://localhost:8080/.
+The application should now be available at http://localhost:9000/.
 
 ### Usage:
 
@@ -43,10 +43,10 @@ The application should now be available at http://localhost:8080/.
 
 ### Screenshot
 Desktop version
-![](https://drive.google.com/file/d/1d9KqX2kdJLDFigofpJr7AtAzSGH7EP7L/view?usp=sharing)
+(https://drive.google.com/file/d/1d9KqX2kdJLDFigofpJr7AtAzSGH7EP7L/view?usp=sharing)
 
 Mobile version
-![](https://drive.google.com/file/d/1qoQGTRq2t-wDr_Qf594oOjMdYhl5B1xM/view?usp=sharing)
+(https://drive.google.com/file/d/1qoQGTRq2t-wDr_Qf594oOjMdYhl5B1xM/view?usp=sharing)
 
 
 ### Links
